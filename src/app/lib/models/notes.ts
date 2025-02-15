@@ -12,8 +12,6 @@ const notesSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     }
-
-
 });
 
 const Notes = mongoose.models.Notes || mongoose.model("Notes", notesSchema);
