@@ -26,7 +26,7 @@ export async function GET(req:Request,contex:{params:any}) {
         if(!notes){
             return NextResponse.json({message:"User not found"},{status:404})
         }
-        return NextResponse.json({notes:notes},{status:201})
+        return NextResponse.json({data:notes},{status:201})
 
     }catch(error){
         return NextResponse.json({message:"error fetching notes"+error},{status:500})
